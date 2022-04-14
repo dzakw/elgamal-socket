@@ -27,10 +27,3 @@ print("decrypted message: ", end="")
 print(lts(pt))
 
 client_socket.close()
-
-""""
-dec(ct,p,key,q)
-pt=dec(ct,p,key,q)
-d_msg=''.join(pt)
-print("Decryted msg=",d_msg)
-"""

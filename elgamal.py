@@ -62,18 +62,3 @@ def dec(ct,p,key,q):
     for i in range(0,len(ct)):
         pt.append(chr(int(ct[i]/h)))
     return pt
-
-
-"""msg=input("Enter msg.")
-q=random.randint(pow(10,20),pow(10,50))
-g=random.randint(2,q)
-key=gen_key(q)
-h=power(g,key,q)
-print("g used=",g)
-print("g^a used=",h)
-ct,p=enc(msg,q,h,g)
-print("Original msg=",msg)
-print("Encrypted msg=",ct)
-pt=dec(ct,p,key,q)
-d_msg=''.join(pt)
-print("Decryted msg=",d_msg)"""
