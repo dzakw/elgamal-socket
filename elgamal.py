@@ -3,7 +3,7 @@ from math import pow
 
 a=random.randint(2,10)
 
-#To fing gcd of two numbers
+#To find gcd of two numbers
 def gcd(a,b):
     if a<b:
         return gcd(b,a)

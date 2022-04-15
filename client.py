@@ -2,11 +2,13 @@ import socket
 import elgamal
 import pickle
 
-client = socket.socket() #socket.AF_INET, socket.SOCK_STREAM)  # AF_INET = IP, SOCK_STREAM = TCP
+client = socket.socket()
+# socket.AF_INET, socket.SOCK_STREAM) 
+# AF_INET = IP, SOCK_STREAM = TCP
 
 
 # the ip address or hostname of the server, the receiver
-host = socket.gethostname()
+host = "172.20.10.3"
 # the port, let's use 5001
 port = 1024
 

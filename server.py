@@ -3,10 +3,12 @@ import elgamal
 import pickle
 
 
-SERVER_HOST = "0.0.0.0"
+SERVER_HOST = "172.20.10.3"
 SERVER_PORT = 1024
 
-server = socket.socket() #socket.AF_INET, socket.SOCK_STREAM)  # AF_INET = IP, SOCK_STREAM = TCP
+server = socket.socket()
+# socket.AF_INET, socket.SOCK_STREAM) 
+# AF_INET = IP, SOCK_STREAM = TCP
 server.bind((SERVER_HOST, SERVER_PORT))  # 127.0.0.1
 server.listen()
 print(f"[*] Listening as {SERVER_HOST}:{SERVER_PORT}")
